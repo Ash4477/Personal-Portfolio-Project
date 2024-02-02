@@ -1,0 +1,99 @@
+*{
+    box-sizing: "border-box";
+}
+
+:root{
+    --color1: hsl(0, 48%, 51%);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+
+#navbar{
+    background-color: var(--color1);
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+#navbar ul{
+    list-style-type: none;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 3%;
+    min-width: 300px;
+}
+
+#navbar li,a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar a:hover{
+    background-color: hsl(0, 2%, 33%);
+    cursor: pointer;
+}
+
+
+
+/* main section */
+
+main{
+    background: linear-gradient(
+        -135deg,
+        hsl(0, 0%, 12%) 30%,
+        hsl(0, 1%, 24%)
+    );
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+#welcome-section div{
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    transform: translate(0%,100%);
+    overflow: hidden;
+}
+
+#welcome-section h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 700;
+    text-align: center;
+}
+#welcome-section p{
+    margin: 0;
+    padding-top:0;
+    color: var(--color1);
+    text-align: center;
+}
