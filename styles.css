@@ -15,6 +15,23 @@ body{
     overflow-x: hidden;
 }
 
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:767.98px){
+    #icons-portion label{
+        font-size: 1rem !important;
+        padding-left: 10px;
+    }
+
+    #icons-portion{
+        width:100% !important;
+    }
+}
+
 /* navbar */
 
 #navbar{
@@ -181,8 +198,6 @@ main{
     color: var(--color1);
     transform: translate(5px,0);
 }
-
-
 
 #projects > button p{
     display: inline-block;
