@@ -54,12 +54,13 @@ body{
 #navbar a{
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
     width: 100%;
     height: 100%;
 }
 
 #navbar a:hover{
-    background-color: hsl(0, 2%, 33%);
+    background-color: var(--color2);
     cursor: pointer;
 }
 
@@ -141,8 +142,9 @@ main{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    border-radius: 10%;
+    border-radius: 2%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 .proj-img{
@@ -160,7 +162,27 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
+.proj-title code{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color3);
+    transition: transform 0.3s ease;
+}
+
+.proj-title:hover .left-angle{
+    color: var(--color1);
+    transform: translate(-5px,0);
+}
+
+.proj-title:hover .right-angle{
+    color: var(--color1);
+    transform: translate(5px,0);
+}
+
+
 
 #projects > button p{
     display: inline-block;
@@ -198,6 +220,7 @@ main{
 /* contact section */
 #contact-section{
     width:100%;
+    min-height: 71vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -208,17 +231,17 @@ main{
 #contact-section > h1{
     font-family: 'Raleway', sans-serif !important;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     padding-bottom: 0;
-    margin-top: 120px;
 }
 
 #contact-section > p{
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-weight: 100px;
+    font-size: 1.5rem;
 }
 
 #icons-portion{
@@ -242,4 +265,16 @@ main{
 
 .icon:hover{
     transform: translate(0,10%);
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 20%;
+    color: white;
+    text-align: end;
+    padding-right: 15px;
+    margin-top: 50px;
+    border-top: 3px solid var(--color1);    
 }
