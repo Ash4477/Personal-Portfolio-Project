@@ -276,6 +276,7 @@ main{
 #icons-portion label{
     font-size: 2rem;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .icon:hover{
